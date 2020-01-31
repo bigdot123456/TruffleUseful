@@ -1,0 +1,21 @@
+npm-debug.log
+node_modules
+yarn-error.log
+.DS_Store
+.vscode
+.node*
+archive/*
+build/
+coverage
+coverageEnv
+coverage.json
+tmp
+log/*.log
+.deployment.js
+将删除 .idea/.gitignore
+将删除 .idea/contracts.iml
+将删除 .idea/markdown-navigator-enh.xml
+将删除 .idea/markdown-navigator.xml
+将删除 .idea/misc.xml
+将删除 .idea/modules.xml
+将删除 .idea/vcs.xml

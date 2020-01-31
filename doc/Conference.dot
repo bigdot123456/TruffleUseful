@@ -1,0 +1,37 @@
+strict digraph {
+  constructor
+  registerWithEncryption [color=brown]
+  registerInternal [color=gray]
+  RegisterEvent
+  register [color=brown]
+  withdraw [color=purple]
+  transfer
+  WithdrawEvent
+  totalBalance [color=yellow]
+  isRegistered [color=yellow]
+  isAttended [color=yellow]
+  isPaid [color=yellow]
+  payout [color=yellow]
+  payback
+  PaybackEvent
+  cancel
+  CancelEvent
+  clear [color=purple]
+  ClearEvent
+  setLimitOfParticipants
+  changeName
+  attend
+  AttendEvent
+  registerWithEncryption -> registerInternal
+  registerWithEncryption -> RegisterEvent
+  register -> registerInternal
+  register -> RegisterEvent
+  withdraw -> transfer
+  withdraw -> WithdrawEvent
+  payback -> PaybackEvent
+  cancel -> CancelEvent
+  clear -> transfer
+  clear -> ClearEvent
+  attend -> AttendEvent
+}
+
